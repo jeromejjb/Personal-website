@@ -1,0 +1,140 @@
+    
+    body{     
+        font-family: 'Open Sans', sans-serif;   
+        background: #2c3e50;
+    }
+    nav {
+        position: relative;
+        margin: 270px auto 0%;
+        width: 590px;
+        height: 50px;
+        background: #34495e;
+        border-radius: 8px;
+        font-size: 0%;
+        font-family: 'Open sans', sans-serif;
+        font-weight: bolder;
+        box-shadow: 0 2px 3px 0 rbga(0,0,0,.1);
+        position: fixed;
+        top: 0%;
+        left: 50%;
+        
+        transform: translate(-50%, 50%);
+        
+    }
+    nav a {
+        font-size: 15px;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        line-height: 50px;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        text-align: center;
+    }
+    nav .animation{
+       position: absolute; 
+       height: 5px;
+       top: 0;
+       z-index: 0;
+       background: #1abc9c;
+       border-radius: 8px;
+       transition: all .5s ease 0s;
+
+    }
+    a:nth-child(1){
+        width: 100px;
+    }
+    nav .start-home,a:nth-child(1):hover~.animation{
+    width: 100px;
+    left: 0px;
+    }
+    a:nth-child(2){
+        width: 110px;
+    }
+    nav .start-about,a:nth-child(2):hover~.animation{
+    width: 110px;
+    left: 100px;
+    }
+    a:nth-child(3){
+        width: 100px;
+    }
+    nav .start-blog,a:nth-child(3):hover~.animation{
+    width: 100px;
+    left: 210px;
+    }
+    a:nth-child(4){
+        width: 160px;
+    }
+    nav .start-portfolio,a:nth-child(4):hover~.animation{
+    width: 160px;
+    left: 310px;
+    }
+    a:nth-child(5){
+        width: 120px;
+    }
+    nav .start-contact,a:nth-child(5):hover~.animation{
+    width: 120px;
+    left: 470;
+    }
+    .header{
+         grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: transparent;
+        text-align: center;
+        padding-top: 30px;
+        z-index: 1;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    h2{
+        font-size: 22;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    font-size: 16;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 35%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+
+
+}
+img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+h4{
+    color: white;
+
+}
